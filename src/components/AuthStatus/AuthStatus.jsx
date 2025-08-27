@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "@contexts/AuthProvider";
 import { Button } from "@mantine/core";
 
@@ -11,11 +11,7 @@ export function AuthStatus() {
   };
 
   if (auth.user === null) {
-    return (
-      <Button href="/login" component="a" color="yellow" radius="md" size="md">
-        Авторизоваться
-      </Button>
-    );
+    return <NavLink to="/login" className="auth-btn">Авторизоваться</NavLink>;
   }
 
   return (
