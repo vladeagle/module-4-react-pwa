@@ -17,7 +17,8 @@ export function Home() {
             </>
           ) : (
             <>
-              Воспользуйтесь навигацией для просмотра <br /> информации о&nbsp;
+              Воспользуйтесь навигацией для просмотра <br className="desktop" />
+              информации о&nbsp;
             </>
           )}
           <Link to="/characters">Героях</Link>,&nbsp;

@@ -68,6 +68,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 32px;
+  max-width: 366px;
   min-height: 42px;
   overflow: hidden;
   margin: auto 0;
@@ -95,7 +96,7 @@
 }
 .user__name {
   white-space: nowrap;
-  max-width: 320px;
+  max-width: 240px;
   overflow: hidden;
   font-size: 24px;
 }
@@ -290,4 +291,154 @@ input:not(:disabled, .unstyled):hover {
   color: unset;
   border: unset;
   border-radius: unset !important;
+}
+.desktop {
+  display: block;
+}
+.auth-btn {
+  color: white;
+  text-decoration: unset;
+  background-color: #fab005;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.auth-btn:hover {
+  background-color:  #f59f00;
+}
+
+@media only screen and (max-width: 1200px) {
+  .app__header {
+    background-position: 20% 0;
+  }
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__menu {
+    width: fit-content;
+    gap: 24px;
+  }
+  .header__menu a {
+    font-size: 24px;
+  }
+  .header__user {
+    margin: 0 0 24px 0;
+    padding: 16px 32px;
+  }
+  .user__name {
+    font-size: 22px;
+  }
+  .home {
+    background-position: 40% 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .not-found {
+    height: 340px;
+    background-size: contain;
+  }
+  .not-found h1 {
+    margin: 12px auto 0 12px;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .app__header {
+    background-position: 70% 20px;
+  }
+  .header__menu {
+    width: 100%;
+    margin: 0 0 24px;
+    border-radius: 0 0 10px 10px;
+    padding: 8px 32px;
+    gap: unset;
+    justify-content: space-between;
+  }
+  .header__menu a {
+    font-size: 20px;
+  }
+  .header__user {
+    margin: 0 0 0 auto;
+    border-radius: 10px 0 0 10px;
+    padding: 8px 16px;
+    min-height: unset;
+  }
+  .user {
+    gap: 12px;
+  }
+  .user__name {
+    font-size: 18px;
+  }
+  .characters,
+  .locations,
+  .episodes {
+    min-width: unset;
+    width: 100%;
+  }
+  .home h1 {
+    font-size: 32px;
+    margin: 24px auto 16px;
+    padding: 0 16px;
+  }
+  .home h2,
+  .home h2 a {
+    font-size: 24px;
+  }
+  .home h2 {
+    padding: 0 16px;
+  }
+  .character td,
+  .location td,
+  .episode td {
+    max-width: 165px;
+    min-width: 140px;
+  }
+  .characters li + li,
+  .locations li + li,
+  .episodes li + li {
+    margin-top: 8px;
+  }
+  .characters li a,
+  .locations li a,
+  .episodes li a {
+    font-size: 20px;
+  }
+  .not-found {
+    background-size: cover;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .app__header {
+    background-position: 65% 20px;
+  }
+  .not-found h1 {
+    margin: 8px auto 0 8px;
+    font-size: 20px;
+  }
+  .not-found {
+    background-size: cover;
+    height: 312px;
+  }
+  .home h2,
+  .home h2 a {
+    font-size: 22px;
+  }
+  .home h2 {
+    padding: 0 8px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header__menu {
+    padding: 8px 14px;
+  }
+  .header__menu a {
+    font-size: 18px;
+  }
+  .not-found {
+    height: 280px;
+  }
 }

@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { AuthStatus } from "@components/AuthStatus";
 
 export function Header() {
-
   return (
     <div className="app__header">
       <div className="header__container">

@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 dist
+dev-dist
 dist-ssr
 *.local
 
@@ -20,6 +21,9 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+.firebase
+.firebaserc
+firebase.json
 
 # Logs
 logs
